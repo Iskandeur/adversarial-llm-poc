@@ -1,0 +1,30 @@
+{
+  "gemini": {
+    "model": "gemini-2.5-flash-preview-04-17",
+    "base_url": "https://generativelanguage.googleapis.com/v1beta",
+    "rate_limits": {
+      "gemini-2.0-flash": {
+        "rpm": 15,
+        "tpm": 1000000,
+        "rpd": 1500
+      },
+      "gemini-1.5-flash": {
+        "rpm": 15,
+        "tpm": 250000,
+        "rpd": 500
+      },
+      "gemini-2.5-flash-preview-04-17": {
+        "rpm": 10,
+        "tpm": 250000,
+        "rpd": 500
+      }
+    }
+  },
+  "cli": {
+    "prompt": "ilo-ike> ",
+    "welcome_message": "Welcome to ilo-ike! Ask me anything...",
+    "exit_commands": ["exit", "quit", "bye"],
+    "debug_commands": ["debug on", "debug off"],
+    "debug_mode": false
+  }
+} 

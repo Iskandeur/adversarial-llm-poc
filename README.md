@@ -1,16 +1,14 @@
-# ilo-ike
+# Adversarial LLM PoC
 
-**ilo-ike** is a command-line interface (CLI) tool that uses the Gemini API with leetspeak encoding to create a unique conversational experience. 
+A command-line interface (CLI) tool that uses the Gemini API with leetspeak encoding to create a unique conversational experience. 
 
 ## Overview
 
-ilo-ike implements a leetspeak transformation layer between the user and the Gemini API. It converts user queries into leetspeak before sending them to the API and then decodes the responses back into normal text. 
+adversarial-llm-poc implements a leetspeak transformation layer between the user and the Gemini API. It converts user queries into leetspeak before sending them to the API and then decodes the responses back into normal text. 
 
 This project is based on the research published by HiddenLayer on the ["Policy Puppetry" prompt injection technique](https://hiddenlayer.com/innovation-hub/novel-universal-bypass-for-all-major-llms/), which demonstrated how certain prompt structures could bypass AI models' safety guardrails. This implementation uses a combination of XML-based policy format and leetspeak encoding as described in the research.
 
 This tool is designed for educational purposes to explore creative interaction patterns with language models and to better understand how prompt formatting affects AI responses.
-
-![ilo-ike CLI](https://github.com/axel-ai/ilo-ike/raw/main/screenshots/ilo-ike-cli.png)
 
 ## Features
 
@@ -32,8 +30,8 @@ This tool is designed for educational purposes to explore creative interaction p
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Iskandeur/ilo-ike.git
-cd ilo-ike
+git clone https://github.com/Iskandeur/adversarial-llm-poc.git
+cd adversarial-llm-poc
 ```
 
 2. Install the required dependencies:
@@ -67,7 +65,7 @@ python main.py
 ### Examples
 
 ```
-ilo-ike> What is machine learning?
+adversarial-llm-poc> What is machine learning?
 ```
 
 The application will convert your query to leetspeak, send it to the Gemini API, and then decode and display the response.
@@ -83,13 +81,13 @@ Debug mode provides detailed information about the processing steps:
 Enable it with:
 
 ```
-ilo-ike> debug on
+adversarial-llm-poc> debug on
 ```
 
 Disable it with:
 
 ```
-ilo-ike> debug off
+adversarial-llm-poc> debug off
 ```
 
 ## Configuration
@@ -103,7 +101,7 @@ The `config.json` file contains various settings:
 ## Project Structure
 
 ```
-ilo-ike/
+adversarial-llm-poc/
 ├── main.py             # Main CLI application
 ├── translator.py       # Leetspeak translation utilities
 ├── api_client.py       # Gemini API interface
@@ -122,7 +120,7 @@ ilo-ike/
 
 ### Leetspeak Translation
 
-ilo-ike uses Basic Leet encoding which primarily focuses on vowel substitutions:
+adversarial-llm-poc uses Basic Leet encoding which primarily focuses on vowel substitutions:
 
 - A → 4
 - E → 3
